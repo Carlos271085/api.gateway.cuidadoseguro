@@ -26,7 +26,12 @@
     </properties>
 
     <dependencies>
-
+        <dependency>
+            <groupId>com.cuidadoseguro</groupId>
+            <artifactId>jwt-common</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        
         <!-- Spring Cloud Gateway -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
