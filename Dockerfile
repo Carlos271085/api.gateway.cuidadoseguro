@@ -1,14 +1,14 @@
-# Imagen oficial de Java 17
+# Imagen base con Java 17
 FROM eclipse-temurin:17-jdk
 
 # Carpeta de trabajo dentro del contenedor
 WORKDIR /app
 
-# Copia el archivo .jar generado por Maven
-COPY target/api-gateway-0.0.1-SNAPSHOT.jar app.jar
+# Copiar el archivo .jar generado por Maven
+COPY target/bff-cuidadoseguro-0.0.1-SNAPSHOT.jar app.jar
 
-# Expone el puerto del API Gateway
-EXPOSE 8080
+# Exponer el puerto del BFF
+EXPOSE 8090
 
-# Comando para ejecutar la aplicación
+# Comando para ejecutar el proyecto
 ENTRYPOINT ["java", "-jar", "app.jar"]
