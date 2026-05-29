@@ -31,7 +31,8 @@ public class JwtAuthenticationFilter implements WebFilter {
             return chain.filter(exchange);
         }
 
-        String token = authHeader.substring(7);
+        //String token = authHeader.substring(7);
+        String token = authHeader.replaceAll("Bearer ", "");
 
         //System.out.println("TOKEN: " + token);
 
