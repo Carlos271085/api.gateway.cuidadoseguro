@@ -1,0 +1,12 @@
+target/
+!target/*.jar
+.git
+.gitignore
+.mvn
+*.md
+*.log
+*.iml
+.idea/
+.vscode/
+hs_err_pid*
+replay_pid*
